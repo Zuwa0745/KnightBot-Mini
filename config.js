@@ -1,89 +1,88 @@
-/**
+ /**
  * Global Configuration for WhatsApp MD Bot
  */
 
 module.exports = {
     // Bot Owner Configuration
-    ownerNumber: ['91xxxxxxxxxxx','917023951514'], // Add your number without + or spaces (e.g., 919876543210)
-    ownerName: ['Knight Bot Mini', 'Professor'], // Owner names corresponding to ownerNumber array
+    ownerNumber: ['255745363380'], // Namba yako ya TZ iliyorekebishwa
+    ownerName: ['Zuwa Bot Owner'], 
     
     // Bot Configuration
-    botName: 'Knight Bot Mini',
+    botName: 'Zuwa Bot', // Jina jipya la bot yako
     prefix: '.',
     sessionName: 'session',
     sessionID: process.env.SESSION_ID || '',
-    newsletterJid: '120363161513685998@newsletter', // Newsletter JID for menu forwarding
-    updateZipUrl: 'https://github.com/mruniquehacker/KnightBot-Mini/archive/refs/heads/main.zip', // URL to latest code zip for .update command
+    newsletterJid: '120363161513685998@newsletter',
+    updateZipUrl: 'https://github.com/mruniquehacker/KnightBot-Mini/archive/refs/heads/main.zip',
     
     // Sticker Configuration
-    packname: 'Knight Bot Mini',
+    packname: 'Zuwa Bot Pack',
     
-    // Bot Behavior
-    selfMode: false, // Private mode - only owner can use commands
-    autoRead: false,
-    autoTyping: false,
-    autoBio: false,
+    // Bot Behavior (Nimeziwasha baadhi ili bot ichangamke)
+    selfMode: false, 
+    autoRead: true, // Isome meseji zenyewe
+    autoTyping: true, // Ionyeshe "typing..." ukituma amri
+    autoBio: true, // Ibadilishe bio ya WhatsApp yenyewe
     autoSticker: false,
-    autoReact: false,
-    autoReactMode: 'bot', // set bot or all via cmd
+    autoReact: true, // Itoe reaction zenyewe
+    autoReactMode: 'bot', 
     autoDownload: false,
     
     // Group Settings Defaults
     defaultGroupSettings: {
       antilink: false,
-      antilinkAction: 'delete', // 'delete', 'kick', 'warn'
+      antilinkAction: 'delete',
       antitag: false,
       antitagAction: 'delete',
-      antiall: false, // Owner only - blocks all messages from non-admins
+      antiall: false,
       antiviewonce: false,
       antibot: false,
-      anticall: false, // Anti-call feature
-      antigroupmention: false, // Anti-group mention feature
-      antigroupmentionAction: 'delete', // 'delete', 'kick'
-      welcome: false,
-      welcomeMessage: '╭╼━≪•𝙽𝙴𝚆 𝙼𝙴𝙼𝙱𝙴𝚁•≫━╾╮\n┃𝚆𝙴𝙻𝙲𝙾𝙼𝙴: @user 👋\n┃Member count: #memberCount\n┃𝚃𝙸𝙼𝙴: time⏰\n╰━━━━━━━━━━━━━━━╯\n\n*@user* Welcome to *@group*! 🎉\n*Group 𝙳𝙴𝚂𝙲𝚁𝙸𝙿𝚃𝙸𝙾𝙽*\ngroupDesc\n\n> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ botName*',
+      anticall: true, // Iweke true kuzuia watu wasikupigie simu botini
+      antigroupmention: false,
+      antigroupmentionAction: 'delete',
+      welcome: true, // Iweke true ili ikaribishe watu wapya
+      welcomeMessage: 'Karibu @user kwenye kundi letu la @group! 👋\n\n> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ Zuwa Bot*',
       goodbye: false,
-      goodbyeMessage: 'Goodbye @user 👋 We will never miss you!',
+      goodbyeMessage: 'Kwaheri @user, tutakukumbuka! 💀',
       antiSpam: false,
       antidelete: false,
       nsfw: false,
       detect: false,
       chatbot: false,
-      autosticker: false // Auto-convert images/videos to stickers
+      autosticker: false 
     },
     
-    // API Keys (add your own)
+    // API Keys
     apiKeys: {
-      // Add API keys here if needed
       openai: '',
       deepai: '',
       remove_bg: ''
     },
     
-    // Message Configuration
+    // Message Configuration (Kwa Kiswahili kidogo)
     messages: {
-      wait: '⏳ Please wait...',
-      success: '✅ Success!',
-      error: '❌ Error occurred!',
-      ownerOnly: '👑 This command is only for bot owner!',
-      adminOnly: '🛡️ This command is only for group admins!',
-      groupOnly: '👥 This command can only be used in groups!',
-      privateOnly: '💬 This command can only be used in private chat!',
-      botAdminNeeded: '🤖 Bot needs to be admin to execute this command!',
-      invalidCommand: '❓ Invalid command! Type .menu for help'
+      wait: '⏳ Tafadhali subiria kidogo...',
+      success: '✅ Imekamilika!',
+      error: '❌ Hitilafu imetokea!',
+      ownerOnly: '👑 Amri hii ni kwa ajili ya mmiliki wa bot pekee!',
+      adminOnly: '🛡️ Amri hii ni kwa ajili ya Ma-admin wa kundi pekee!',
+      groupOnly: '👥 Amri hii inatumika kwenye makundi pekee!',
+      privateOnly: '💬 Amri hii inatumika kwenye chat binafsi pekee!',
+      botAdminNeeded: '🤖 Ili nifanye hivi, lazima niwe Admin wa kundi!',
+      invalidCommand: '❓ Amri haijatambulika! Andika .menu upate msaada'
     },
     
     // Timezone
-    timezone: 'Asia/Kolkata',
+    timezone: 'Africa/Dar_es_Salaam', // Iwekwe Tanzania kulingana na eneo lako
     
     // Limits
     maxWarnings: 3,
     
-    // Social Links (optional)
+    // Social Links
     social: {
       github: 'https://github.com/mruniquehacker',
-      instagram: 'https://instagram.com/yourusername',
-      youtube: 'http://youtube.com/@mr_unique_hacker'
+      instagram: 'https://instagram.com/',
+      youtube: 'https://youtube.com/'
     }
 };
-  
+ 
