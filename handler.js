@@ -80,7 +80,8 @@ const handleMessage = async (sock, msg) => {
 
     const args = body.slice(prefix.length).trim().split(/\s+/);
     const commandName = args.shift().toLowerCase();
-    const command = commands.get(commandName) || commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
+    const command = commands.get(commandName);
+
 
     if (!command) return;
 
