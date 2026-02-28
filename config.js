@@ -49,9 +49,9 @@ module.exports = {
       goodbyeMessage: 'Kwaheri @user, tutakukumbuka! 💀',
       
       // Mipangilio ya Kuona Meseji Zilizofutwa na View Once
-      antiviewonce: true,   // Itatuma picha za View Once inbox kwako
-      antidelete: true,     // Inazuia meseji zisifutwe (Itatuma kwako)
-      antideleteAction: 'inbox', // Inahakikisha inakuja inbox yako binafsi
+      antiviewonce: true, 
+      antidelete: true,     
+      
       
       // Ulinzi Mwingine
       antitag: false,
