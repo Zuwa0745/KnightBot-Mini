@@ -1,14 +1,14 @@
- /**
+/**
  * Global Configuration for WhatsApp MD Bot
  */
 
 module.exports = {
     // Bot Owner Configuration
-    ownerNumber: ['255745363380'], // Namba yako ya TZ iliyorekebishwa
+    ownerNumber: ['255745363380'], 
     ownerName: ['Zuwa Bot Owner'], 
     
     // Bot Configuration
-    botName: 'Zuwa Bot', // Jina jipya la bot yako
+    botName: 'Zuwa Bot', 
     prefix: '.',
     sessionName: 'session',
     sessionID: process.env.SESSION_ID || '',
@@ -18,17 +18,20 @@ module.exports = {
     // Sticker Configuration
     packname: 'Zuwa Bot Pack',
     
-    // Bot Behavior (Nimeziwasha baadhi ili bot ichangamke)
+    // ORODHA YA MATUSI (Iliyoombwa na User)
+    badwords: ['kuma', 'msenge', 'unafilwa', 'katombwe', 'katiwe', 'kundu', 'kubabako', 'kumamako', 'nguruwe', 'mbwa'],
+    
+    // Bot Behavior
     selfMode: false, 
-    autoRead: true, // Isome meseji zenyewe
-    autoTyping: true, // Ionyeshe "typing..." ukituma amri
-    autoBio: true, // Ibadilishe bio ya WhatsApp yenyewe
+    autoRead: true, 
+    autoTyping: true, 
+    autoBio: true, 
     autoSticker: false,
-    autoReact: true, // Itoe reaction zenyewe
+    autoReact: true, 
     autoReactMode: 'bot', 
     autoDownload: false,
     
-    // Group Settings Defaults
+    // Group Settings Defaults (Ulinzi wa Matusi umewashwa hapa)
     defaultGroupSettings: {
       antilink: false,
       antilinkAction: 'delete',
@@ -37,10 +40,12 @@ module.exports = {
       antiall: false,
       antiviewonce: false,
       antibot: false,
-      anticall: true, // Iweke true kuzuia watu wasikupigie simu botini
+      anticall: true, 
       antigroupmention: false,
       antigroupmentionAction: 'delete',
-      welcome: true, // Iweke true ili ikaribishe watu wapya
+      antibadword: true, // IMEWASHWA MOJA KWA MOJA
+      antibadwordAction: 'kick', // ADHABU YA KUMTOA MTU
+      welcome: true, 
       welcomeMessage: 'Karibu @user kwenye kundi letu la @group! 👋\n\n> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ Zuwa Bot*',
       goodbye: false,
       goodbyeMessage: 'Kwaheri @user, tutakukumbuka! 💀',
@@ -59,7 +64,7 @@ module.exports = {
       remove_bg: ''
     },
     
-    // Message Configuration (Kwa Kiswahili kidogo)
+    // Message Configuration
     messages: {
       wait: '⏳ Tafadhali subiria kidogo...',
       success: '✅ Imekamilika!',
@@ -73,7 +78,7 @@ module.exports = {
     },
     
     // Timezone
-    timezone: 'Africa/Dar_es_Salaam', // Iwekwe Tanzania kulingana na eneo lako
+    timezone: 'Africa/Dar_es_Salaam', 
     
     // Limits
     maxWarnings: 3,
@@ -85,4 +90,3 @@ module.exports = {
       youtube: 'https://youtube.com/'
     }
 };
- 
