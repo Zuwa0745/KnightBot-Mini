@@ -1,6 +1,6 @@
 /**
  * Global Configuration for WhatsApp MD Bot
- * Full Setup by Zuwa Bot Owner
+ * FULL PRO SETUP - Kila kitu kimejumuishwa
  */
 
 module.exports = {
@@ -20,10 +20,10 @@ module.exports = {
     packname: 'Zuwa Bot Pack',
     author: 'Zuwa Bot',
 
-    // ORODHA YA MATUSI (Iliyoombwa na User)
+    // ORODHA YA MATUSI (Imewekwa kwenye kodi ya kudumu)
     badwords: ['kuma', 'msenge', 'unafilwa', 'katombwe', 'katiwe', 'kundu', 'kubabako', 'kumamako', 'nguruwe', 'mbwa'],
     
-    // Bot Behavior
+    // Bot Behavior (Akili ya Bot)
     selfMode: false, 
     autoRead: true, 
     autoTyping: true, 
@@ -33,40 +33,47 @@ module.exports = {
     autoReactMode: 'bot', 
     autoDownload: false,
     
-    // Group Settings Defaults (Ulinzi Kamili)
+    // Group Settings Defaults (ULINZI KAMILI)
     defaultGroupSettings: {
       antilink: false,
       antilinkAction: 'delete',
       antibadword: true,
       antibadwordAction: 'kick',
       anticall: true,
+      
+      // Mipangilio ya Kukaribisha na Kuaga
       welcome: true, 
-      detect: true,
+      detect: true, 
       welcomeMessage: 'Karibu @user kwenye kundi letu la @group! 👋\n\n> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ Zuwa Bot*',
       goodbye: true,
       goodbyeMessage: 'Kwaheri @user, tutakukumbuka! 💀',
+      
+      // Mipangilio ya Kuona Meseji Zilizofutwa na View Once
+      antiviewonce: true,   // Itatuma picha za View Once inbox kwako
+      antidelete: true,     // Inazuia meseji zisifutwe (Itatuma kwako)
+      antideleteAction: 'inbox', // Inahakikisha inakuja inbox yako binafsi
+      
+      // Ulinzi Mwingine
       antitag: false,
       antitagAction: 'delete',
       antiall: false,
-      antiviewonce: false,
       antibot: false,
       antigroupmention: false,
       antigroupmentionAction: 'delete',
       antiSpam: false,
-      antidelete: false,
       nsfw: false,
       chatbot: false,
       autosticker: false 
     },
     
-    // API Keys (Zikiwa tupu kuzuia makosa ya uandishi)
+    // API Keys (Ili bot isikwame)
     apiKeys: {
       openai: '',
       deepai: '',
       remove_bg: ''
     },
     
-    // Message Configuration (Kiswahili)
+    // Message Configuration (Ujumbe wa Bot kwa Kiswahili)
     messages: {
       wait: '⏳ Tafadhali subiria kidogo...',
       success: '✅ Imekamilika!',
@@ -79,10 +86,8 @@ module.exports = {
       invalidCommand: '❓ Amri haijatambulika! Andika .menu upate msaada'
     },
     
-    // Timezone
+    // Timezone & Limits
     timezone: 'Africa/Dar_es_Salaam', 
-    
-    // Limits
     maxWarnings: 3,
     
     // Social Links
