@@ -1,5 +1,6 @@
 /**
  * Global Configuration for WhatsApp MD Bot
+ * Full Setup by Zuwa Bot Owner
  */
 
 module.exports = {
@@ -17,7 +18,8 @@ module.exports = {
     
     // Sticker Configuration
     packname: 'Zuwa Bot Pack',
-    
+    author: 'Zuwa Bot',
+
     // ORODHA YA MATUSI (Iliyoombwa na User)
     badwords: ['kuma', 'msenge', 'unafilwa', 'katombwe', 'katiwe', 'kundu', 'kubabako', 'kumamako', 'nguruwe', 'mbwa'],
     
@@ -31,10 +33,7 @@ module.exports = {
     autoReactMode: 'bot', 
     autoDownload: false,
     
-    // Group Settings Defaults (Ulinzi wa Matusi umewashwa hapa)
-        badwords: ['kuma', 'msenge', 'unafilwa', 'katombwe', 'katiwe', 'kundu', 'kubabako', 'kumamako', 'nguruwe', 'mbwa'],
-    
-    // Group Settings Defaults
+    // Group Settings Defaults (Ulinzi Kamili)
     defaultGroupSettings: {
       antilink: false,
       antilinkAction: 'delete',
@@ -43,7 +42,7 @@ module.exports = {
       anticall: true,
       welcome: true, 
       detect: true,
-      welcomeMessage: 'Karibu @user kwenye kundi letu la @group! 👋',
+      welcomeMessage: 'Karibu @user kwenye kundi letu la @group! 👋\n\n> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ Zuwa Bot*',
       goodbye: true,
       goodbyeMessage: 'Kwaheri @user, tutakukumbuka! 💀',
       antitag: false,
@@ -53,19 +52,21 @@ module.exports = {
       antibot: false,
       antigroupmention: false,
       antigroupmentionAction: 'delete',
-      antiSpam: false
-    },
-
+      antiSpam: false,
+      antidelete: false,
+      nsfw: false,
+      chatbot: false,
+      autosticker: false 
     },
     
-    // API Keys
+    // API Keys (Zikiwa tupu kuzuia makosa ya uandishi)
     apiKeys: {
       openai: '',
       deepai: '',
       remove_bg: ''
     },
     
-    // Message Configuration
+    // Message Configuration (Kiswahili)
     messages: {
       wait: '⏳ Tafadhali subiria kidogo...',
       success: '✅ Imekamilika!',
