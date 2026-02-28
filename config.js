@@ -38,33 +38,24 @@ module.exports = {
     defaultGroupSettings: {
       antilink: false,
       antilinkAction: 'delete',
-      antibadword: true, 
+      antibadword: true,
       antibadwordAction: 'kick',
       anticall: true,
-      welcome: true,
-      welcomeMessage: 'Karibu @user kwenye kundi letu la @group! 👋\n\n> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ Zuwa Bot*',
-
-      antilinkAction: 'delete',
+      welcome: true, 
+      detect: true,
+      welcomeMessage: 'Karibu @user kwenye kundi letu la @group! 👋',
+      goodbye: true,
+      goodbyeMessage: 'Kwaheri @user, tutakukumbuka! 💀',
       antitag: false,
       antitagAction: 'delete',
       antiall: false,
       antiviewonce: false,
       antibot: false,
-      anticall: true, 
       antigroupmention: false,
       antigroupmentionAction: 'delete',
-      antibadword: true, // IMEWASHWA MOJA KWA MOJA
-      antibadwordAction: 'kick', // ADHABU YA KUMTOA MTU
-      welcome: true, 
-      welcomeMessage: 'Karibu @user kwenye kundi letu la @group! 👋\n\n> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ Zuwa Bot*',
-      goodbye: false,
-      goodbyeMessage: 'Kwaheri @user, tutakukumbuka! 💀',
-      antiSpam: false,
-      antidelete: false,
-      nsfw: false,
-      detect: false,
-      chatbot: false,
-      autosticker: false 
+      antiSpam: false
+    },
+
     },
     
     // API Keys
