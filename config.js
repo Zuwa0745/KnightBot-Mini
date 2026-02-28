@@ -32,8 +32,18 @@ module.exports = {
     autoDownload: false,
     
     // Group Settings Defaults (Ulinzi wa Matusi umewashwa hapa)
+        badwords: ['kuma', 'msenge', 'unafilwa', 'katombwe', 'katiwe', 'kundu', 'kubabako', 'kumamako', 'nguruwe', 'mbwa'],
+    
+    // Group Settings Defaults
     defaultGroupSettings: {
       antilink: false,
+      antilinkAction: 'delete',
+      antibadword: true, 
+      antibadwordAction: 'kick',
+      anticall: true,
+      welcome: true,
+      welcomeMessage: 'Karibu @user kwenye kundi letu la @group! 👋\n\n> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ Zuwa Bot*',
+
       antilinkAction: 'delete',
       antitag: false,
       antitagAction: 'delete',
